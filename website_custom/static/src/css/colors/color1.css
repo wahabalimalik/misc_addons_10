@@ -1,0 +1,333 @@
+/* ============================
+
+	        COLOR 
+
+=============================== */
+.btn-link,.btn-link:hover,
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover,
+.navbar.navbar-bg-light .navbar-nav > li > a:hover, .navbar.navbar-bg-light .navbar-nav > li > a:focus, .navbar.navbar-bg-light .navbar-nav > li > a.active,
+.navbar.navbar-bg-light .navbar-nav > li > a.highlighted,
+.page-links div a:hover, .page-links div a:active, .page-links div a:focus,
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover, .dropdown-menu > li > a.active,
+.text-color,
+.item-box a:hover i,
+.inverse i,
+.item-box.icons-color i,
+.pricing:hover .title,
+.pricing:hover .title a,
+.pricing.active .title,
+.pricing.active .title a,
+.process-content:hover .title,
+.pricing .price,
+.post-meta  i,
+.meta i,
+.quote blockquote:before,
+.quote blockquote:after,
+.tweet_time a,
+#video-controls a,
+.link-hover-color a:hover,
+.icons-hover-color i:hover,
+.navbar-default .navbar-nav > li.active > a, 
+.navbar-default .navbar-nav > li.active > a:focus, 
+.navbar-default .navbar-nav > li.active > a:hover,
+#page .breadcrumb > .active,
+.timeliner li:hover .timeline-heading h4.subheading,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.sitemap li a:hover,
+.bakery-block:hover .fill-icon,
+.pricing:hover .pricing-icon,
+.travel-block i,
+.side-navbar .top-contact.link-hover-black > a:hover,
+.side-navbar .top-social-icon > a:hover i,
+header .nav .open > a.highlighted,
+.btn-transparent-black:hover,
+.btn-transparent-white:hover,
+.btn-transparent-black-inverse,
+.btn-transparent-white-inverse,
+.btn-transparent-color,
+.btn-transparent-color-inverse:hover,
+.figcaption i:hover,
+.footer-widget .widget a:hover,
+.accordion-1 .panel-title i,
+ul.arrow-style.ls1 li:before,
+h2 span,
+h3 span,
+h4 span,
+a.learn-more:hover,
+.learn-more:hover i,
+.case-title a,
+a.read-more,
+.side-nav header .social-icon i:hover,
+.side-nav header .nav > li > a:hover, 
+.side-nav header  .nav > li > a:focus{
+	color: #fcba37!important;
+}
+
+
+/*  TEXT COLOR 2 */
+.text-color2,
+.icons-color2 i,
+.icons-color2 a:hover i,
+.post-title:hover a,
+a.read-more:hover,
+.read-more:hover i,
+.office-details .detail-box .detail strong,
+a.learn-more,
+.name a,
+ul.arrow-style.ls2 li:before,
+.latest-posts .title a,
+.countdown-period {
+	color: #006b63 !important;
+}
+
+
+/* ============================
+
+
+	       BACKGROUND COLOR 
+
+=============================== */
+.top-bar-section.top-bar-bg-color,
+.product-count,
+.nav > li > a:focus, .nav > li > a:hover,
+.top-bar-section.top-bar-bg-color,
+.section-title h1:before,
+.section-title h2:before,
+.section-title h3:before,
+.special-feature .mask-top h4:before ,
+.s-feature-box,
+.s-feature-box:hover .mask-bottom,
+.progress-bar,
+.owl-prev .fa, .owl-next .fa,
+h3.count-number:before,
+h2.count-number:before,
+.item-box.inverse a:hover i,
+.work-process-box .item-number,
+.name:before,
+.inverse-bg-color i,
+.icons-bg-color i,
+.bg-color,
+.bg-hover-color:hover,
+.gray-bg i:hover,
+.features-list-item:hover i,
+.bar,
+.blog.timeliner>li:hover .timeline-image,
+.blog.timeliner>li:hover .timeline-icon,
+.static-color-icons span,
+.static-color-icons i,
+.fill-icon:after,
+.bakery-menu .nav-tabs > li.active > a, 
+.bakery-menu .nav-tabs > li.active > a:focus, 
+.bakery-menu .nav-tabs > li.active > a:hover,
+.travel-tab .input-group-addon,
+.travel-tab .nav-tabs > .active > a,
+.travel-tab .nav-tabs > .active > a:hover,
+.travel-tab .nav-tabs > .active > a:focus,
+.bootstrap-datetimepicker-widget table td.active, 
+.bootstrap-datetimepicker-widget table td.active:hover,
+.travel-tab .nav-tabs > li a > i ,
+.hotel-tab .nav-tabs > li.active > a, 
+.hotel-tab .nav-tabs > li.active > a:focus, 
+.hotel-tab .nav-tabs > li.active > a:hover,
+.navbar-default .navbar-toggle .icon-bar,
+.circle.count-number.border-color:before,
+.btn-transparent-color:hover,
+.btn-transparent-color-inverse,
+.image-bg .overlay-color,
+.overlay-color,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.inverse,
+.item-box:hover i:after,
+.item-box.bg-color,
+.list-group.style1 .list-group-item:hover:before,
+.list-group.style1 .list-group-item.active:before,
+.list-group.style1 a.list-group-item.in:before,
+.hbg-color:hover,
+.hbg-color:focus,
+.separate-bg.bg-color:after,
+.pricing:hover .btn,
+.pricing.active .btn{
+	background-color: #fcba37;
+}
+
+/*  BACKGROUND  COLOR 2 */
+.btn-default,
+.progress,
+div.count-number:after,
+.bg-color2,
+.portfolio-grid .grid,
+.service-content .title:before,
+.social-icon i:hover,
+.overlay-color2,
+.newsletter .submit.bg-color:hover,
+.dark-header .navbar,
+.header-search-content,
+.item-box.bg-color2,
+.accordion-1 .panel > .panel-heading > .panel-title > a,
+.accordion-1 .collapse.in,
+.accordion-1 .panel-body,
+.accordion-1 .collapse,
+.about-us1 .box h4,
+.btn-default.inverse:hover,
+.btn-default.inverse:focus,
+.history li:hover .timeline-icon,
+.list-group.style1 .list-group-item:hover,
+.list-group.style1 .list-group-item.active,
+.service-tabs .nav-tabs > li.active > a,
+.filter-menu .pts1 li.filter.active,
+.filter-menu .pts1 li.filter:hover,
+.navigation-2.owl-theme .owl-controls .owl-buttons div i:hover,
+.pagination > .active > span,
+.pagination > .active > span:hover,
+.list-group.style1 a.list-group-item.in,
+.widget .list-group.style1 .list-group-submenu .list-group-item:hover,
+.list-group.style1 a.list-group-item.in.collapsed:hover,
+.widget  .search-form button,
+.tags li a:hover,
+.post-classic .meta,
+.hbg-color2:hover,
+.hbg-color2:focus ,
+.features-list-item i,
+.separate-bg:after,
+.countdown-section,
+.pricing:hover,
+ .pricing.active, 
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:focus, 
+.nav-tabs > li.active > a:hover,
+.work-section .nav > li.active:before,
+.mixed-grid .nav  > li.active:before,
+.work-section .nav > li:hover:before,
+.mixed-grid .nav  > li:hover:before{
+	background-color: #006b63;
+}
+
+/* ============================
+
+	       BORDER COLOR 
+
+=============================== */
+
+.desc-border,
+.border-color,
+.timeliner li:hover .timeline-image,
+.blog.timeliner  >li:hover .timeline-panel,
+.form-control:focus,
+.circle.count-number.border-color,
+.btn-transparent-color,
+.btn-transparent-color-inverse:hover,
+.btn-transparent-color:hover,
+.btn-transparent-color-inverse,
+.item-box.icons-color i
+{
+	border-color: #fcba37;
+}
+
+.bottom-arrow:before{
+	border-top-color: #fcba37;
+}
+.btn-default:before{
+	border-left-color: #fcba37;
+}
+.btn-default:before{
+	border-top-color: #fcba37;
+}
+.btn-default:hover{
+	border-color: #fcba37;
+}
+/*  BORDER  COLOR 2 */
+.btn-default,
+.btn-default.inverse:hover,
+.btn-default.inverse:focus,
+.item-box i,
+.pagination > .active > span,
+.pagination > .active > span:hover,
+.pagination > li > a, 
+.pagination > li > span,
+.pagination > .disabled > a, 
+.pagination > .disabled > a:focus, 
+.pagination > .disabled > a:hover, 
+.pagination > .disabled > span, 
+.pagination > .disabled > span:focus, 
+.pagination > .disabled > span:hover,.rightGrip, 
+.leftGrip{
+	border-color: #006b63;
+}
+.btn-default:hover:before{
+	border-left-color: #006b63;
+}
+.btn-default:hover:before{
+	border-top-color: #006b63;
+}
+
+.blog.timeliner >li:hover  .timeline-panel:before{
+  border-left-color: #fcba37;  
+}
+.blog.timeliner  >li.timeline-inverted:hover .timeline-panel:before{
+  border-right-color: #fcba37;
+  border-left-color: #ffffff;
+}
+.right.blog.timeliner  >li.timeline-inverted:hover .timeline-panel:before,
+.right.blog.timeliner >li:hover  .timeline-panel:before{
+	border-right-color: #fcba37;
+	border-left-color: #ffffff;
+}
+.pricing:hover i.icons-circle.medium.pricing-icon{
+	text-shadow: 0px 0px 5px rgba(255, 196, 0, 0.5);
+}	
+.top-up .nav-tabs > li.active > a:after, 
+.top-up  .nav-tabs > li.active > a:focus:after, 
+.top-up .nav-tabs > li.active > a:hover:after{
+    border-color: #fcba37 transparent transparent;
+}
+
+/******************************************************************************
+  Max Width "767px"
+*******************************************************************************/
+@media (max-width: 767px) { 
+	.blog.timeliner  >li.timeline-inverted:hover .timeline-panel:before,
+	.blog.timeliner >li:hover  .timeline-panel:before{
+		border-right-color: #fcba37;
+		border-left-color: #ffffff;
+	}
+}
+/******************************************************************************
+  Max Width "992px"
+*******************************************************************************/
+@media (min-width: 992px) { 
+
+	.navbar-bg-color{
+		background-color: #fcba37;
+	}
+
+}
+/* Transparent Color */
+
+.color-switch .owl-controls .owl-page span{
+ background-color: rgba(255, 196, 0,.8);
+}
+
+/* Green rgb */
+.green-rbg,
+.grid-list .image .list-overlay,
+.mixed-grid.mgs1 .grid-item .figcaption,
+.tparrows{
+ background-color: rgba(0,107,99,.8) !important;
+} 
+
+
+
+/* Content Select In Browser */
+
+::-moz-selection {
+    background: #fcba37;
+    color: #000000;
+    text-shadow: none;
+}
+
+::selection {
+    background: #fcba37;
+    color: #a4003a;
+    text-shadow: none;
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- View -->
+    	<!-- Tree -View -->
+		    <record model="ir.ui.view" id="saas_control_panel.list_clients">
+		      <field name="name">saas_control_panel list_clients</field>
+		      <field name="model">saas.client</field>
+		      <field name="arch" type="xml">
+		        <tree>
+		          <field name="name"/>
+		          <field name="value"/>
+		          <field name="value2"/>
+		        </tree>
+		      </field>
+		    </record>
+    
+    <!-- Actions -->
+      <!-- actions for Clients -->
+        <record model="ir.actions.act_window" id="saas_control_panel.action_clients">
+          <field name="name">Clients</field>
+          <field name="res_model">saas.client</field>
+          <field name="view_mode">tree,form</field>
+        </record>
+    
+    <!-- menuitems -->
+      <!-- menu categories -->
+        <menuitem 
+          name="Clients" 
+          id="saas_control_panel.clients" 
+          parent="saas_control_panel.menu_main_cp"
+          action="base.action_partner_form"
+        />
+  </data>
+</odoo>

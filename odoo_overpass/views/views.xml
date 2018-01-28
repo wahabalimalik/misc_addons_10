@@ -1,0 +1,98 @@
+<odoo>
+  <data>
+    <!-- Template -->
+      <template id="assets_backend" name="overpass_odoo" inherit_id="web.assets_backend">
+          <xpath expr="." position="inside">
+           <!--    <link 
+            rel="icon" type="image/png" sizes="32x32" 
+            href="/odoo_overpass/static/src/js/turbo-439087fae60c1d26e3f58f9d3966e20a-favicon-32x32.png"
+          />
+          <link 
+            rel="icon" type="image/png" sizes="16x16" 
+            href="/odoo_overpass/static/src/js/turbo-439087fae60c1d26e3f58f9d3966e20a-favicon-16x16.png"
+          />
+          <link 
+            rel="shortcut icon" 
+            href="/odoo_overpass/static/src/js/turbo-439087fae60c1d26e3f58f9d3966e20a-favicon.ico"
+          />
+          <link 
+            href="/odoo_overpass/static/src/js/turbo.f29ddb8e2af0b44f2d28f149b82f8fb4.css" 
+            rel="stylesheet"
+            type="text/css"
+          /> -->
+              <script type="text/javascript" src="/odoo_overpass/static/src/js/overpass_dashboard.js"/>
+          </xpath>
+      </template>
+    <!-- explicit list view definition -->
+    
+    <record model="ir.ui.view" id="odoo_overpass.form">
+      <field name="name">odoo_overpass form</field>
+      <field name="model">odoo.overpass</field>
+      <field name="arch" type="xml">
+        <form create='0'>
+          <header>
+            <button name="action_confirm" string="Fetch" class="btn-primary o_sale_confirm" type="object"/>
+            <button name="click_me" id="click_me" string="Click" 
+            class="oe_highlight"/>
+          </header>
+          <sheet>
+            <group>
+              <group>
+                <field name="name"/>
+              </group>
+              <group>
+                <field name="amenity"/>
+              </group>
+            </group>
+              <notebook>
+                <page string="Results">
+                  <field name="results">
+                    <tree>
+                      <field name="name"/>
+                      <field name="amenity"/>
+                    </tree>
+                  </field>
+                </page>
+              </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.client" id="odoo_overpass.action_dashboard_overpass">
+      <field name="name">Dashboard</field>
+      <field name="tag">odoo_overpass.dashboard</field>
+    </record>
+
+    
+    <record model="ir.actions.act_window" id="odoo_overpass.action_window">
+      <field name="name">odoo_overpass window</field>
+      <field name="res_model">odoo.overpass</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    <!-- Top menu item -->
+    
+    <menuitem name="odoo_overpass" id="odoo_overpass.menu_root"/>
+    
+    <!-- menu categories -->
+    
+    <menuitem 
+      name="Dashboard" 
+      id="odoo_overpass.dashboard" 
+      parent="odoo_overpass.menu_root"
+      sequence = "1"
+      action="odoo_overpass.action_dashboard_overpass"
+      />
+    <menuitem name="Menu 1" id="odoo_overpass.menu_1" parent="odoo_overpass.menu_root"/>
+    
+    <!-- actions -->
+    
+    <menuitem name="List" id="odoo_overpass.menu_1_list" parent="odoo_overpass.menu_1"
+              action="odoo_overpass.action_window"/>
+    
+  </data>
+</odoo>

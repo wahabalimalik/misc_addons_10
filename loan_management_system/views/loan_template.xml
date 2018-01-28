@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+    <template id="assets_backend" name="loan_management_system assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/sales_team/static/src/css/sales_team.css"/>
+            <link rel="stylesheet" href="/sales_team/static/src/less/sales_team_dashboard.less"/>
+            <script type="text/javascript" src="/sales_team/static/src/js/sales_team.js"></script>
+            <script type="text/javascript" src="/loan_management_system/static/src/js/sales_team_dashboard.js"></script>
+        </xpath>
+    </template>
+
+
+    <record id="loan_view_kanban" model="ir.ui.view" >
+        <field name="name">loan_management_system loan_view_kanban</field>
+        <field name="model">loan.dashboard</field>
+        <field name="arch" type="xml">
+            <kanban class="oe_background_grey o_kanban_dashboard o_salesteam_kanban" create="0" js_class="sales_team_dashboards">
+            </kanban>
+        </field>
+    </record>
+
+
+    <!-- views -->
+      <record model="ir.ui.view" id="loan_amount_form_view">
+          <field name="name">loan_management_system loan_amount_form_view</field>
+          <field name="model">loan.amount</field>
+          <field name="arch" type="xml">
+            <form>
+              <sheet>
+                <group>
+                  <group>
+                    <field name="name"/>
+                    <field name="description"/>
+                  </group>
+                  <group>
+                    <field name="w_type"/>
+                    <field name="date"/>
+                  </group>
+                </group>
+              </sheet>
+            </form>
+          </field>
+      </record>
+
+      <record model="ir.ui.view" id="loan_amount_tree_view">
+        <field name="name">loan_management_system loan_amount_tree_view</field>
+        <field name="model">loan.amount</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name"/>
+            <field name="description"/>
+            <field name="w_type"/>
+            <field name="date"/>
+          </tree>
+        </field>
+      </record>
+
+      <record model="ir.ui.view" id="loan_loan_form_view">
+        <field name="name">loan_management_system loan_loan_form_view</field>
+        <field name="model">loan.loan</field>
+        <field name="arch" type="xml">
+          <form>
+            <sheet>
+              <group>
+                <group>
+                  <field name="customer"/>
+                  <field name="name"/>
+                  <field name="description"/>
+                  <field name="amount"/>
+                  <field name="balance"/>
+                </group>
+                <group>
+                  <field name="loan_type"/>
+                  <field name="agent"/>
+                  <field name="date_release"/>
+                  <field name="date_payment"/>
+                  <field name="loan_status"/>
+                </group>
+              </group>
+            </sheet>
+          </form>
+        </field>
+      </record>
+
+      <record model="ir.ui.view" id="loan_loan_tree_view">
+        <field name="name">loan_management_system loan_loan_tree_view</field>
+        <field name="model">loan.loan</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="loan_type"/>
+            <field name="name"/>
+            <field name="description"/>
+            <field name="amount"/>
+            <field name="balance"/>
+            <field name="customer"/>
+            <field name="agent"/>
+            <field name="date_release"/>
+            <field name="date_payment"/>
+            <field name="loan_status"/>
+          </tree>
+        </field>
+      </record>
+
+    <!-- Actions -->
+      <record model="ir.actions.act_window" id="action_loant_view_dashboard">
+          <field name="name">Dashboard</field>
+          <field name="res_model">loan.dashboard</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">kanban,form</field>
+          <field name="context">{}</field>
+      </record>
+
+      <record model="ir.actions.act_window" id="action_loan_amount_view_form">
+          <field name="name">My Wallet</field>
+          <field name="res_model">loan.amount</field>
+          <field name="view_mode">tree,form</field>
+      </record>
+
+      <record model="ir.actions.act_window" id="action_loan_loan_view_form">
+          <field name="name">Loans</field>
+          <field name="res_model">loan.loan</field>
+          <field name="view_mode">tree,form</field>
+      </record>
+
+    <!-- menuitems -->
+      <menuitem id="loan_management_system" sequence='1'  name="Loan"/>
+
+      <menuitem 
+        id="loan_dashboard" 
+        name="Dashboard"
+        action="action_loant_view_dashboard" 
+        sequence="1" 
+        parent="loan_management_system.loan_management_system" 
+      />
+
+      <menuitem 
+        id="loan_amount" 
+        name="My Wallet"
+        action="action_loan_amount_view_form" 
+        sequence="2"
+        parent="loan_management_system.loan_management_system" 
+      />
+
+      <menuitem 
+        id="loan_loan" name="Loans"
+        action="action_loan_loan_view_form" 
+        sequence="3"
+        parent="loan_management_system.loan_management_system" 
+      />
+  </data> 
+</odoo>

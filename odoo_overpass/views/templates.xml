@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+       <!-- Template -->
+<!--             <template id="assets_backend" name="overpass_odoo" inherit_id="web.assets_backend">
+                <xpath expr="." position="inside">
+                    <link rel="stylesheet" href="/oepetstore/static/src/css/petstore.css"/>
+                    <script type="text/javascript" src="/odoo_overpass/static/src/js/dashboard.js"/>
+                </xpath>
+            </template> -->
+    </data>
+</odoo>

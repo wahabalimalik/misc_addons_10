@@ -1,0 +1,15 @@
+<odoo>
+  <template id="custom_about_us" inherit_id="website.layout" name="About Us">
+    <xpath expr="//ul[@id='top_menu']/li[1]" position="before">
+        <li>
+            <a t-attf-href="#about-us">
+                <b>About Us</b>
+            </a>
+        </li><li>
+            <a t-attf-href="#who-we-are">
+                <b>Our History</b>
+            </a>
+        </li>
+    </xpath>
+  </template>
+</odoo>

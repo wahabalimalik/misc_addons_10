@@ -1,0 +1,131 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    
+    <!-- View -->
+      <!-- business data -->
+      <record model="ir.ui.view" id="odoo_osm_sync.build_bus">
+        <field name="name">odoo_osm_sync build_bus</field>
+        <field name="model">osm.build</field>
+        <field name="arch" type="xml">
+          <form>
+            <header>
+              <button  class="btn-primary o_sale_confirm" string="Run" custom="run"/>
+            </header>
+            <sheet>
+              <group>
+                <group>
+                  <field name="bus_ids"/>
+                  <field name="street"/>
+                  <field name="name"/>
+                  <field name="building"/>
+                  <field name="levels"/>
+                </group>
+                <group>
+                  <field name="material"/>
+                  <field name="shop"/>
+                  <field name="types"/>
+                  <field name="amenity"/>
+                </group>
+              </group>
+               <notebook>
+                  <page string="Results">
+                    <field name="info_data">
+                      <tree string="Business Lines" editable="bottom">
+                        <field name="types"/>
+                        <field name="bus_ids"/>
+                        <field name="lat"/>
+                        <field name="lon"/>
+                        <field name="name"/>
+                        <field name="shop"/>
+                        <field name="amenity"/>
+                        <field name="owner"/>
+                        <field name="tenant"/>
+                      </tree>
+                    </field>
+                  </page>
+              </notebook>
+            </sheet>
+          </form>
+        </field>
+      </record>
+      
+      <record model="ir.ui.view" id="odoo_osm_sync.build_own">
+        <field name="name">odoo_osm_sync build_own</field>
+        <field name="model">build.own</field>
+        <field name="arch" type="xml">
+          <form>
+            <header>
+              <button  class="btn-primary o_sale_confirm" string="Run" custom="run"/>
+            </header>
+            <sheet>
+              <group>
+                <group>
+                  <field name="name"/>
+                  <field name="vrn"/>
+                  <field name="accessed"/>
+                  <field name="branch"/>
+                  <field name="tax"/>
+                </group>
+                <group>
+                  <field name="tin"/>
+                  <field name="efd"/>
+                  <field name="valued"/>
+                  <field name="citizen"/>
+                </group>
+              </group>
+              <notebook>
+                 <page string="Results">
+                    <field name="tenants">
+                      <tree string="Tenant Lines" editable="bottom">
+                        <field name="name"/>
+                        <field name="citizen"/>
+                        <field name="rent"/>
+                      </tree>
+                    </field>
+                  </page>
+              </notebook>
+            </sheet>
+          </form>
+        </field>
+      </record>
+
+    <!-- actions opening views on models -->
+    
+      <record model="ir.actions.act_window" id="odoo_osm_sync.action_window_buss">
+        <field name="name">Buss</field>
+        <field name="res_model">osm.build</field>
+        <field name="view_mode">tree,form</field>
+      </record>
+
+      <record model="ir.actions.act_window" id="odoo_osm_sync.action_window_own">
+        <field name="name">Own</field>
+        <field name="res_model">build.own</field>
+        <field name="view_mode">tree,form</field>
+      </record>
+
+      <record model="ir.actions.act_window" id="odoo_osm_sync.action_window_tnt">
+        <field name="name">Tnt</field>
+        <field name="res_model">build.tnt</field>
+        <field name="view_mode">tree,form</field>
+      </record>
+    
+    <!-- Top menu item -->
+    
+      <menuitem name="odoo_osm_sync" id="odoo_osm_sync.menu_root"/>
+      
+      <!-- menu categories -->
+      
+      <menuitem name="OSM" id="odoo_osm_sync.menu_1" parent="odoo_osm_sync.menu_root"/>
+      
+      <!-- actions -->
+      
+      <menuitem name=" buss" id="odoo_osm_sync.menu_1_buss" parent="odoo_osm_sync.menu_1"
+                action="odoo_osm_sync.action_window_buss"/>
+      <menuitem name="own" id="odoo_osm_sync.menu_1_own" parent="odoo_osm_sync.menu_1"
+                action="odoo_osm_sync.action_window_own"/>
+      <menuitem name="tnt" id="odoo_osm_sync.menu_1_tnt" parent="odoo_osm_sync.menu_1"
+                action="odoo_osm_sync.action_window_tnt"/>
+    
+  </data>
+</odoo>
